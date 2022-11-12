@@ -1,30 +1,30 @@
 # API RESTful Para Registro de Usuários
 
-Projeto desenvolvido em Javascript em ambiente Node.js, para interface com o back-end com registro de dados de usuários.
+Projeto desenvolvido em React JS, uma aplicação front-end que através de uma API Rest consulta, cadastrada, atualiza e deleta dados em uma base de usuários hospedada no back-end.
 #
-img![Screenshot 2022-11-12 143929](https://user-images.githubusercontent.com/113479357/201487339-253e7ed0-7d3d-4e1b-b1d3-b5143be769da.png)
-#
+![Screenshot 2022-11-12 143929](https://user-images.githubusercontent.com/113479357/201488194-46261b68-1384-4924-a559-9e98fb85f3fd.png)
 # 🚀 Tecnologias:
  
 Foram utilizadas com as seguintes tecnologias, ferramentas e bibliotecas:
 
-- Node.js
 - Javascript
-- express
-- cors
-- Mongoose
+- React
+- JSX
+- Styled Components
 - yarn
-- MongoDB
+- react-router-dom
+- state
+- ref
+- history
 #
 #
 # 💻 Funcionalidades:
 
-- Conecta rotas de consulta, alteração, criação e deleção.
-- Conexão de todas as rotas com banco de dados em MongoDB.
-- Utilização do Mongoose para conexão com o banco de dados no back-end.
-- A interface front-end pode ser consultado no projeto [name-and-age-registration-webapp](https://github.com/marcioramires/name-and-age-registration-web-app).
+- Cadastro de dados do usuário com a base de dados.
+- Consulta a base de dados.
+- Deleção e atualização da base de dados.
 #
 #
 # 😎 Deploy:
-- Para verificação da API em funcionamento, checar o deploy do front-end desse sistema: [name-and-age-registration-webapp](https://github.com/marcioramires/name-and-age-registration-web-app).
+- [name-and-age-registration-webapp]([https://github.com/marcioramires/name-and-age-registration-web-app](https://name-and-age-registration-web-app-mr.netlify.app/).
 #
