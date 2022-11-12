@@ -26,5 +26,5 @@ Foram utilizadas com as seguintes tecnologias, ferramentas e bibliotecas:
 #
 #
 # 😎 Deploy:
-- [name-and-age-registration-webapp]([https://github.com/marcioramires/name-and-age-registration-web-app](https://name-and-age-registration-web-app-mr.netlify.app/).
+- [name-and-age-registration-webapp](https://name-and-age-registration-web-app-mr.netlify.app/).
 #
