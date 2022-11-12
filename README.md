@@ -1,4 +1,4 @@
-# API RESTful Para Registro de Usuários
+# Web App Para Registro de Usuários - Aplicação Frontend
 
 Projeto desenvolvido em React JS, uma aplicação front-end que através de uma API Rest consulta, cadastrada, atualiza e deleta dados em uma base de usuários hospedada no back-end.
 #
