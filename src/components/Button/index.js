@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Button } from './styles'
+import { Button as PageButton } from './styles'
 
-function PageButton({children, isBack}){
+function Button({children, ...props}){
 
-    return <Button isBack={isBack}>{children}</Button>
+    return <PageButton {...props}>{children}</PageButton>
 }
 
-export default PageButton
+export default Button

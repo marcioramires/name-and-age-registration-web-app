@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Button = styled.button`
     width: 342px;
     height: 74px;
-    ${(props) => props.isBack ? `background: transparent;` : `background: rgba(0, 0, 0, 0.8);`};
+    background: ${props => props.isBack ? 'transparent' : 'rgba(0, 0, 0, 0.8)'};
     border-radius: 14px;
-    ${(props) => props.isBack ? `border: 1px solid white;` : `border: none;`};
+    border: ${props => props.isBack ? '1px solid white' : 'none'};
     margin-top: 130px;
 
     font-style: normal;
@@ -28,6 +28,6 @@ export const Button = styled.button`
 }
 
 img {
-    ${(props) => props.isBack && `transform: rotateY(180deg);`}
+    transform: ${props => props.isBack && 'rotateY(180deg)'};
 }
 `
