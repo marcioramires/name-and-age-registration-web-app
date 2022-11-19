@@ -5,14 +5,15 @@ import { useHistory } from "react-router-dom"
 import People from '../../assets/people.svg'
 import Arrow from '../../assets/arrow.svg'
 
+import Button from '../../components/Button'
+import ContainerItems from "../../components/ContainerItems"
+import H1 from "../../components/Title"
+
 import {
     Container,
     Image,
-    H1,
-    ContainerItens,
     InputLabel,
     Input,
-    Button,
 } from './styles'
 
 const App = () => {
@@ -36,7 +37,7 @@ const App = () => {
     return (
         <Container>
             <Image alt="logo" src={People} />
-            <ContainerItens>
+            <ContainerItems>
                 <H1>Olá!</H1>
 
                 <InputLabel>Nome</InputLabel>
@@ -46,7 +47,7 @@ const App = () => {
                 <Input ref={inputAge} placeholder="None" />
 
                 <Button onClick={addNewUser}>Cadastrar<img alt="seta" src={Arrow} /></Button>
-            </ContainerItens>
+            </ContainerItems>
         </Container>
     )
 }

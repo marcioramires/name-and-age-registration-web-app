@@ -7,12 +7,13 @@ import Avatar from '../../assets/avatar.svg'
 import Arrow from '../../assets/arrow.svg'
 import Trash from '../../assets/trash.png'
 
+import Button from '../../components/Button'
+import ContainerItems from "../../components/ContainerItems"
+import H1 from "../../components/Title"
+
 import {
     Container,
     Image,
-    H1,
-    ContainerItens,
-    Button,
     User
 } from './styles'
 
@@ -46,7 +47,7 @@ const Users = () => {
     return (
         <Container>
             <Image alt="logo" src={Avatar} />
-            <ContainerItens>
+            <ContainerItems isBlur={true}>
                 <H1>Usuários</H1>
                 <ul>
                     {users.map((user) => (
@@ -56,8 +57,8 @@ const Users = () => {
                         </User>
                     ))}
                 </ul>
-                <Button onClick={goBackPage}><img alt="seta" src={Arrow} />Voltar</Button>
-            </ContainerItens>
+                <Button isBack={true} onClick={goBackPage}><img alt="seta" src={Arrow} />Voltar</Button>
+            </ContainerItems>
         </Container>
     )
 }
