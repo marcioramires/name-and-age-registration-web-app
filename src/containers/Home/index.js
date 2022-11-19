@@ -24,14 +24,13 @@ const App = () => {
     const history = useHistory()
 
     async function addNewUser() {
-        console.log("cliquei!")
         const { data: newUser } = await axios.post("http://localhost:3001/users", {
             name: inputName.current.value,
             age: inputAge.current.value,
         })
 
         setUsers([...users, newUser,])
-
+   
         history.push("/users")
     }
 

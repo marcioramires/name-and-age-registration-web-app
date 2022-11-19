@@ -30,12 +30,13 @@ const Users = () => {
             setUsers(newUsers)
         }
 
-        fetchUsers()
+        fetchUsers()   
+        
     }, [])
 
     async function deleteUser(userId) {
         await axios.delete(`http://localhost:3001/users/${userId}`)
-        const newUsers = users.filter((user) => user.id !== userId)
+        const newUsers = users.filter((user) => user._id !== userId)
 
         setUsers(newUsers)
     }
@@ -51,9 +52,9 @@ const Users = () => {
                 <H1>Usuários</H1>
                 <ul>
                     {users.map((user) => (
-                        <User key={user.id}>
+                        <User key={user._id}>
                             <p>{user.name}</p> <p>{user.age}</p>
-                            <button onClick={() => deleteUser(user.id)}><img alt="lata-de-lixo" src={Trash} /></button>
+                            <button onClick={() => deleteUser(user._id)}><img alt="lata-de-lixo" src={Trash} /></button>
                         </User>
                     ))}
                 </ul>
